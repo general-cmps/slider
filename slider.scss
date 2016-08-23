@@ -1,0 +1,104 @@
+.slider {
+	position: relative;
+    width: 740px;
+    .slider-bigpic {
+        height: 415px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slider-bigul {
+        width: 10000%;
+        li {
+            width: 740px;
+            height: 415px;
+            float: left;
+            position: relative;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                vertical-align: bottom;
+            }
+        }
+
+    }
+
+    .slider-title {
+        background: rgba(0, 0, 0, 0.5) !important; //IE9以上
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        -moz-opacity: 0.5; //for FF
+        filter: Alpha(opacity=50); //for IE8
+        background: #000;
+        h3 {
+            // margin: 24px 0 10px 20px;
+            position: relative; //for IE 8
+            a {
+            	width: 600px;
+                line-height: 70px;
+                padding-left: 20px;
+                color: #fff;
+                font-size: 24px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                word-wrap: normal;
+            }
+            a:hover {
+                color: #e7e7e7;
+            }
+        }
+        p {
+            position: relative; //for IE 8
+            color: #fff;
+            font-size: 14px;
+            margin: 0 20px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    .slider-btn {
+        position: absolute;
+        right: 20px;
+        bottom: 33px;
+        a {
+            width: 13px;
+            height: 4px;
+            margin-left: 4px;
+            float: left;
+            background-color: #fff;
+            display: inline-block;
+        }
+        a.active {
+            background-color: #dd0010;
+        }
+    }
+    .slider-arrow {
+        width: 39px;
+        height: 63px;
+        position: absolute;
+        top: 50%;
+        margin-top: -32px;
+
+
+    }
+    .slider-l {
+        background: url("./images/i-slide-l.png?__sprite") no-repeat;
+        left: 0;
+    }
+
+    .slider-r {
+        background: url("./images/i-slide-r.png?__sprite") no-repeat;
+        right: 0;
+    }
+}
+// 如果有影响全局的 scss，请写在这里

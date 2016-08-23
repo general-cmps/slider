@@ -1,0 +1,23 @@
+<div class="slider">
+	<div class="slider-bigpic">
+		<ul class="slider-bigul clear">
+			{{#each slider}}
+			
+			<li class="slider-bigli">
+				<a href="{{url}}" title="{{title}}"><img src="./images/1.jpg"/></a>
+				<div class="slider-title">
+					<h3><a href="{{url}}" title="{{title}}">{{title}}</a>
+					</h3>
+				</div>
+			</li>
+			{{/each}}
+		</ul>
+		<div class="slider-btn clear">
+			{{#each slider}}
+				<a href="javascript:;"></a>
+			{{/each}}
+		</div>
+		<a class="slider-arrow slider-l" href="javascript:;"></a>
+		<a class="slider-arrow slider-r" href="javascript:;"></a>
+	</div>
+</div>
